@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Larissa
+-->
+<html>
+    <head>
+        <title>Lägg till arbete</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="js/add.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-primary"> 
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white active" href="index.html"><b> Visa </b></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href ="#"><b> Lägg till </b></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href ="about.html"><b> Om oss </b></a></li>
+                    </ul>
+                </div>
+            </nav> 
+            <h1>Lägg till arbete</h1>
+            <br/>
+            <p>På denna sida kan Du lägga nya arbeten i databasen.</p>
+            <p>Fyll i formuläret och klicka på knappen "Skicka".</p>
+            <br/>
+            <p id="message"></p>
+            <br/>
+            <form>
+                <div class="w-75 p-3">
+                    <label for="company" class="form-label">Företag</label> 
+                    <input type="text" class="form-control" id="company" name="company" autocomplete="off" required>
+                </div>
+                <div class="w-75 p-3">
+                    <label for="title" class="form-label">Titel</label> 
+                    <input type="text" class="form-control" id="title" name="title" autocomplete="off" required>                    
+                </div>
+                <div class="w-75 p-3">
+                    <label for="location" class="form-label">Stad</label> 
+                    <input type="text" class="form-control" id="location" name="location" autocomplete="off" required>     
+                </div>
+                <div class="w-75 p-3">
+                    <label for="description" class="form-label">Beskrivning</label> 
+                    <input type="text" class="form-control" id="description" name="description" autocomplete="off" required>     
+                </div>
+                <div class="w-50 p-3">
+                    <label for="start" class="form-label">Startdatum</label> 
+                    <input type="date" class="form-control" id="start" name="start" required> 
+                </div>
+                <div class="w-50 p-3">
+                    <label for="end" class="form-label">Slutdatum</label> 
+                    <input type="date" class="form-control" id="end" name="end" required>     
+                </div>
+                <br/>                
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" id="submit" onclick="return postForm();"> <b> Skicka </b> </button>
+                </div>   
+            </form>
+        </div> 
+    </body>
+</html>

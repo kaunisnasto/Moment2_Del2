@@ -1,0 +1,9 @@
+{
+    "name": "Moment2_Del2",
+    "proxy": "http://localhost:3000",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Larissa",
+    "contributors": [],
+    "dependencies": {}
+}
